@@ -18,13 +18,17 @@ Despues de eso en dos terminales distintas se usaran los siguientes comandos:
 Se evidencia como se hace uso del metodo setkv
 
 -Primero veremos el index/front que se hizo
+
 ![descripcion imagen](img/img_3.png)
 
 -Despues meti estos datos como prueba y se ve que se ejecuto correctamente.
+
 ![descripcion imagen](img/img_4.png)
 
 -Ahora haremos el Get con la siguiente prueba en base de la llave ingresada en el ejemplo anterior.
+
 ![descripcion imagen](img/img_5.png)
 
 -Y por ultimo vemos como regresa el valor esperado en base al set que se realizo previamente
+
 ![descripcion imagen](img/img_6.png)
