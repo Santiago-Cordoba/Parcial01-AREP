@@ -32,3 +32,7 @@ Se evidencia como se hace uso del metodo setkv
 -Y por ultimo vemos como regresa el valor esperado en base al set que se realizo previamente
 
 ![descripcion imagen](img/img_6.png)
+
+### Video funcionamiento
+
+[Video](https://pruebacorreoescuelaingeduco-my.sharepoint.com/:v:/g/personal/santiago_cordoba-d_mail_escuelaing_edu_co/Ea7qIH4h4ZtOkTT2clsty2MBl7fqaIXGPSwZZgW82yd75w?e=CoV7HW)
