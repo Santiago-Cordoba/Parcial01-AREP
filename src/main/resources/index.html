@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parcial Arep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<h1>Form with SET</h1>
+<form action="/hello">
+    <label for="name">Key:</label><br>
+    <input type="text" id="name" name="Llave"><br><br>
+    <label for="name">Value:</label><br>
+    <input type="text" id="value" name="Value"><br><br>
+    <input type="button" value="Submit" onclick="loadGetMsg()">
+</form>
+<div id="getrespmsg"></div>
+
+<script>
+    function loadGetMsg() {
+        let nameVar = document.getElementById("name").value;
+        let nameValue = document.getElementById("value").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            document.getElementById("getrespmsg").innerHTML =
+                this.responseText;
+        }
+        xhttp.open("GET", "/setkv?key={" + nameVar + "}" + "&value{" + nameValue + "}" + "e");
+        xhttp.send();
+    }
+</script>
+
+</body>
+
+<body>
+<h1>Form with GET</h1>
+<form action="/hello">
+    <label for="name">Key:</label><br>
+    <input type="text" id="key" name="Llave"><br><br>
+    <input type="button" value="Submit" onclick="loadGetMsga()">
+</form>
+
+<div id="getrespmsgg"></div>
+
+<script>
+    function loadGetMsga() {
+        let nameVar = document.getElementById("key").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            document.getElementById("getrespmsgg").innerHTML =
+                this.responseText;
+        }
+        xhttp.open("GET", "/getkv?key={" + nameVar + "}");
+        xhttp.send();
+    }
+</script>
+
+</body>
+
+</html>
